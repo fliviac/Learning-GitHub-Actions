@@ -24,3 +24,4 @@ jobs:
                echo "Hi, This is Fabio"
                echo "Welcome to me first Workflow"
                sleep 20
+               echo "Current time is `date`"
