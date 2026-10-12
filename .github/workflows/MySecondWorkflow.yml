@@ -86,7 +86,7 @@ jobs:
       - name: Creating custom folder for download
         run: |
           mkdir -p single_file
-          mkdir -p dowload_directory
+          mkdir -p download_directory
       - name: Checking current directory
         run: |
           pwd
@@ -100,7 +100,7 @@ jobs:
         uses: actions/download-artifact@v8
         with:
           name: directory_artifacts
-          path: dowload_directory
+          path: download_directory
       - name: Checking current directory post download
         run: |
           pwd
