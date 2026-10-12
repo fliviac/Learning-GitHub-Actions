@@ -20,7 +20,7 @@ jobs:
          - name: Checking the hostname for runner
            run: hostname
          - name: Running multiple commands
-           run:
+           run: |
                echo "Hi, This is Fabio"
                echo "Welcome to me first Workflow"
                sleep 20
