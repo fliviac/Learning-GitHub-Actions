@@ -2,7 +2,6 @@ on:
   push:
     branches:
       - main
-      - dev
   pull_request:
     branches:
       - main
@@ -80,7 +79,7 @@ jobs:
         run: echo "[INFO] Password for user ${{ vars.USER }} is ${{ secrets.PASSWORD }}."
     environment:
       name: STAGING
-    if: github.ref == 'refs/heads/dev'
+    if: github.head_ref == 'dev'
   production:
       name: PROD DEPLOYMENT
       runs-on: ubuntu-latest
