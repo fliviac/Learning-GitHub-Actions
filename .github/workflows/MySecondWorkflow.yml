@@ -76,3 +76,4 @@ jobs:
           args: >
             -Dsonar.organization=fliviac
             -Dsonar.projectKey=fliviac_Learning-GitHub-Actions
+            
