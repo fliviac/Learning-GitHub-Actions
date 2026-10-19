@@ -77,6 +77,6 @@ jobs:
             -Dsonar.organization=fliviac
             -Dsonar.projectKey=fliviac_Learning-GitHub-Actions
       - name: SonarQube Quality Gate Check
-        uses: SonarSource/sonarqube-quality-gate-action@d209202bc7d53ff1cc128f7f907dac145c9d6ae9 # v1.3.0
+        uses: SonarSource/sonarqube-quality-gate-action@v1.3.0
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}      
